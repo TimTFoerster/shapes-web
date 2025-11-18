@@ -5,35 +5,43 @@
 
 <style>
     .box_black {
-        width: 500px;
-        height: 20px;
+        width: 178px;
+        height: 178px;
         background-color: black;
-        transition: transform 1s;
+        transform: rotate(45deg);
+        position: relative;
+        left: 36px;
+        top: -218px;
+        transition: transform 0.5s;
     }
 
     .box_black:hover {
-        /* height: 40px; */
-        transform: translate(20px, 30px);
+        transform: rotate(45deg) scale(0.5);
     }
 
-    .box_white {
-        width: 500px;
-        height: 20px;
-        background-color: white;
+    .box_black_2 {
+        width: 250px;
+        height: 250px;
+        background-color: black;
+        position: relative;
+        left: 0px;
+        top: -254px;
+        transition: transform 0.5s;
+    }
+
+    .box_black_2:hover {
+        transform: rotate(45deg) scale(0.35);
     }
 
 </style>
 
 </head>
-<body background="img/stripe.png">
+<body>
 
-<div class="box_black"></div>
-<div class="box_white"></div>
-<div class="box_black"></div>
-<div class="box_white"></div>
-<div class="box_black"></div>
-<div class="box_white"></div>
-<div class="box_black"></div>
+<img src="img/shape_250.png" alt="Shapes Image">
+
+<div class="box_black_2"></div>
+
 
 </body>
 </html>
